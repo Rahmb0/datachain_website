@@ -88,4 +88,11 @@ export const marketingConfig = {
     provider: 'convertkit', // or other newsletter service
     formId: 'YOUR_FORM_ID'
   }
+};
+
+// Ensure all API endpoints use HTTPS
+export const API_ENDPOINTS = {
+  base: 'https://api.datachain.sh',
+  github: 'https://api.github.com',
+  // ... other endpoints
 }; 
