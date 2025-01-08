@@ -1,0 +1,27 @@
+@layer components {
+  .primary-button {
+    @apply px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 
+           text-white rounded-full font-medium shadow-lg
+           hover:shadow-xl transition-all duration-300
+           focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2
+           active:scale-95;
+  }
+
+  .secondary-button {
+    @apply px-6 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-white
+           rounded-full font-medium shadow-lg border border-gray-200 dark:border-gray-700
+           hover:shadow-xl transition-all duration-300
+           focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2
+           active:scale-95;
+  }
+
+  .nav-link {
+    @apply relative px-3 py-2 text-gray-700 dark:text-gray-300 
+           hover:text-indigo-600 dark:hover:text-indigo-400
+           transition-colors duration-200
+           after:content-[''] after:absolute after:bottom-0 after:left-0
+           after:w-full after:h-0.5 after:bg-indigo-600
+           after:scale-x-0 hover:after:scale-x-100
+           after:transition-transform after:duration-300;
+  }
+} 
